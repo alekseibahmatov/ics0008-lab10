@@ -47,7 +47,7 @@ document.getElementById('submit').addEventListener('click', function() {
 });
 
 function deleteRow(id) {
-    if (confirm('Are you sure you want to delete item?')) {
+    if (confirm('Are you sure you want to delete item under the number '+id+'?')) {
         let itemsList = JSON.parse(localStorage.getItem('itemsList'));
 
         itemsList[username].splice(id, 1);
