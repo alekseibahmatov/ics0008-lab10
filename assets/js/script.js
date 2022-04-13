@@ -24,8 +24,8 @@ document.getElementById('submit').addEventListener('click', function() {
     let itemName = document.getElementById('item-name-input').value;
     let itemQuantity = document.getElementById('item-quantity-input').value;
 
-    if(itemName === ""  || itemQuantity === "") {
-        alert('Please provide full data');
+    if(itemName === ""  || itemQuantity === "" || itemQuantity <= 0) {
+        alert('Please provide right data');
     } else {
         let itemsList = {};
 
